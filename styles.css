@@ -5,7 +5,18 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    width: auto;
   }
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section {
+    width: 90vw;
+}
 
 .card {
     height: 80vh;   
@@ -27,19 +38,15 @@ body {
 }
 
 .japo-overlay {
-    color: #000; /* Fallback for older browsers */
+    color: #7e040eea;
     color: rgba(126, 4, 14, 0.918);
-    font-size: 90vh;
-    padding:0;
-    margin: 0;
-    position: absolute;
-    z-index: 2;
-    bottom: 27.5vh;
+    font-size: 40vw;
     height: 100%;
-    width: 100%;
     text-align: right;
     text-justify: center;
+    transform: translateY(95%);
 }
+
 .section > section {
     padding: 0 1rem;
 }
