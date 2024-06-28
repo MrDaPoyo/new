@@ -21,17 +21,24 @@ body {
     z-index: 5;
     color: white;
 }
+.card > .author {
+    z-index: 10;
+    color: white;
+}
 
 .japo-overlay {
     color: #000; /* Fallback for older browsers */
     color: rgba(126, 4, 14, 0.918);
-    font-size: 80vh;
+    font-size: 90vh;
     padding:0;
     margin: 0;
     position: absolute;
     z-index: 2;
-    right: 2vw;
-    bottom: -1vh;
+    bottom: 27.5vh;
+    height: 100%;
+    width: 100%;
+    text-align: right;
+    text-justify: center;
 }
 .section > section {
     padding: 0 1rem;
