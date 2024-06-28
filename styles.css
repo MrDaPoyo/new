@@ -10,10 +10,12 @@ body {
 .card {
     height: 80vh;   
     display: flex;
+    flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
-    background-color: red;
+    background-color: rgb(177, 0, 15);
     padding: 1rem;
+    color: white;
 }
 .card > h1 {
     z-index: 5;
@@ -22,14 +24,14 @@ body {
 
 .japo-overlay {
     color: #000; /* Fallback for older browsers */
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(126, 4, 14, 0.918);
     font-size: 80vh;
     padding:0;
     margin: 0;
     position: absolute;
     z-index: 2;
     right: 2vw;
-    bottom: 2vh;
+    bottom: -1vh;
 }
 .section > section {
     padding: 0 1rem;
