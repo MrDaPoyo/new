@@ -5,18 +5,21 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    width: auto;
+    overflow-x: scroll;
   }
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    overflow-x: scroll;
+    width:fit-content;
 }
 
 .section {
     width: 90vw;
     position: relative;
+    padding: 0.5rem;
 }
 
 .card {
