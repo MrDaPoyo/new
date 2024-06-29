@@ -16,18 +16,45 @@ body {
 
 .section {
     width: 90vw;
+    position: relative;
 }
 
 .card {
     height: 80vh;   
+    position: relative;
+    background-color: rgba(177, 0, 15, 1);
+    padding: 1rem;
+    color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
-    background-color: rgb(177, 0, 15);
-    padding: 1rem;
-    color: white;
 }
+
+.card > .bg-image {
+    background-image: url("images/backgrounds/あ.png"); 
+    filter: blur(2px);  
+    -webkit-filter: blur(2px);  
+    background-position: translateX(100%);    
+    background-repeat: no-repeat;   
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card > .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: white;
+    position: absolute;
+    z-index: 5;
+    width: 95%;
+}
+
 .card > h1 {
     z-index: 5;
     color: white;
@@ -35,16 +62,6 @@ body {
 .card > .author {
     z-index: 10;
     color: white;
-}
-
-.japo-overlay {
-    color: #7e040eea;
-    color: rgba(126, 4, 14, 0.918);
-    font-size: 40vw;
-    height: 100%;
-    text-align: right;
-    text-justify: center;
-    transform: translateY(95%);
 }
 
 .section > section {
