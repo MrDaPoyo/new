@@ -1,10 +1,10 @@
 const poyo = document.querySelector('#poyo_star');
 const screenWidth = window.innerWidth;
 const screenHeight = window.innerHeight;
-const poyowhisper = new Audio('/../audio/whispers-poyo.mp3');
+const poyowhisper = document.querySelector('#poyo-whisper');
 
 poyo.addEventListener('mouseover', () => {
-    poyowhisper.play()
+    poyowhisper.play();
     // Animate poyo to fly to the new position
     poyo.animate([
         { transform: `rotate(0deg)` },
@@ -14,7 +14,7 @@ poyo.addEventListener('mouseover', () => {
         { transform: `translate(200px, -100px)` },
         { transform: `translate(1000px, -500px)` }
     ], {
-        duration: 1000, // Animation duration in milliseconds
+        duration: 5000, // Animation duration in milliseconds
         easing: 'ease-in-out', // Animation easing function
     }).onfinish = () => {
         poyo.style.opacity = 0; // Set opacity to 0 to fade away poyo
