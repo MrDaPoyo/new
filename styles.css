@@ -1,0 +1,76 @@
+body {
+    color: white;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    padding:0;
+    margin:0;
+
+    background: linear-gradient(45deg, #000000, #0e2600);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero .row h1 {
+    font-size: 12.5em;
+}
+.spinning_ring {
+    /*position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;*/
+
+    width: 25%;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.h-50 {
+    height: 50%;
+}
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:15% 0%}
+    50%{background-position:86% 100%}
+    100%{background-position:15% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:15% 0%}
+    50%{background-position:86% 100%}
+    100%{background-position:15% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:15% 0%}
+    50%{background-position:86% 100%}
+    100%{background-position:15% 0%}
+}
