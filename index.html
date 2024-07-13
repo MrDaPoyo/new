@@ -5,8 +5,9 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" type="text/css" href="static/styles.css" />
-        
+        <link rel="icon" href="favicon.ico" />
         <meta name="author" content="Poyo" />
         <meta name="keywords" content="poyo, dapoyo, fiverr, portfolio, frontend, developer, web, website, design, cool, awesome, amazing, simple, clean, neat, wonderful, great, fantastic, beautiful, pretty, nice, lovely, cute, adorable, aspiring, beginner, student">
         <meta name="description" content="Simple, yet cool website showcasing Poyo's portfolio.">
@@ -19,23 +20,31 @@
     <body>
         
         <section class="hero">
-            <div class="row h-50"><h1>Po</h1>
+            <div id="top" class="row h-50"><h1>Po</h1>
             <img src="static/images/cropped_spinning_ring.gif" class="spinning_ring" alt="Spinning ring" draggable="false">
             <h1>yo</h1>
             </div>
             <h1>Aspiring Frontend Developer</h1>
         </section>
         <section>
-            <div class="container">
-            <audio id="poyo-whisper"> 
-                <source src="static/audio/wispers-poyo.mp3" type="audio/mp3">
-            </audio>
-            <h1>Hi there, I'm Poyo! <img src="static/images/poyo_on_a_star.png" style="height: 5%;" id="poyo_star"></h1>
-            <p>I'm a young teen residing in <b>Spain</b> who loves programming and engineering. Coding since 2020, I've learnt a bit of everything. 
-What I am most proficient on is on <b>web development</b>(HTML, CSS, JSON, DJANGO, NODE.JS, EXPRESS.JS) and <b>Python</b>. I also love creating entertaining games in <b>Pico 8</b> using <b>Lua</b>. 
-I also like participating in <a href="https://devpost.com/MrDaPoyo?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"><b>hackathons</b></a>.</p>
-        <script src="static/js/flying_poyo.js"></script>    
-            
+            <div class="container h-50vh row">
+                <audio id="poyo-whisper"> 
+                    <source src="static/audio/wispers-poyo.mp3">
+                </audio>
+                <div class="w-100">
+                    <h1>Hi there, I'm Poyo! <img src="static/images/poyo_on_a_star.png" style="height: 10%;" id="poyo_star"></h1>
+                    <p>I'm a young teen living in <b>Spain</b> who loves programming and tinkering around. Coding since 2020, I learnt a bit of everything.<br> 
+I am most proficient in <b>web development</b>(HTML, CSS, JSON, Django, Node.JS, Express.JS) and <b>Python</b>. I also love creating entertaining games in <b>Pico 8</b> using <b>Lua</b>.<br>
+Additionally, I like participating in <a href="#hackathons"><b>hackathons</b></a>.
+                    <script src="static/js/flying_poyo.js"></script>    
+                </div>
+                <div class="w-100 h-100">
+                    <img src="static/images/sea_and_rocks.webp" id="mountains" alt="Mountains" draggable="false" class="w-100 h-100">
+                </div>
+            </div>
+        </section>
+        <section>
+
         </section>
     </body>
 </html>

@@ -22,6 +22,8 @@ poyo.addEventListener('mouseover', () => {
             poyo.remove(); // Delete poyo from the DOM
             
         }
+        alert("You found me!");
+        alert("*Poyo hands you a cookie* 🍪")
     };
     
 });
