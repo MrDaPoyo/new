@@ -8,14 +8,13 @@ poyo.addEventListener('mouseover', () => {
     // Animate poyo to fly to the new position
     poyo.animate([
         { transform: `rotate(0deg)` },
-        { transform: `rotate(200deg)`}, 
         { transform: `rotate(360deg)`}, 
-        { transform: `translate(50px, -25px)` },
-        { transform: `translate(200px, -100px)` },
+        { transform: `rotate(700deg)`}, 
+        { transform: `rotate(720deg)`}, 
         { transform: `translate(1000px, -500px)` }
     ], {
-        duration: 5000, // Animation duration in milliseconds
-        easing: 'ease-in-out', // Animation easing function
+        duration: 4000, // Animation duration in milliseconds
+        easing: 'ease-in', // Animation easing function
     }).onfinish = () => {
         poyo.style.opacity = 0; // Set opacity to 0 to fade away poyo
         // Check if poyo is outside of the screen
