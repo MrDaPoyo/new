@@ -1,14 +1,14 @@
 const poyo = document.querySelector('#poyo_star');
 const screenWidth = window.innerWidth;
 const screenHeight = window.innerHeight;
+const poyowhisper = new Audio('/../audio/whispers-poyo.mp3');
 
 poyo.addEventListener('mouseover', () => {
-    // Calculate the new position for poyo to fly to
-
+    poyowhisper.play()
     // Animate poyo to fly to the new position
     poyo.animate([
         { transform: `rotate(0deg)` },
-        { transform: `rotate(200)`}, 
+        { transform: `rotate(200deg)`}, 
         { transform: `rotate(360deg)`}, 
         { transform: `translate(50px, -25px)` },
         { transform: `translate(200px, -100px)` },
@@ -21,6 +21,7 @@ poyo.addEventListener('mouseover', () => {
         // Check if poyo is outside of the screen
         if (poyo.offsetLeft < 0 || poyo.offsetLeft > window.innerWidth || poyo.offsetTop < 0 || poyo.offsetTop > window.innerHeight) {
             poyo.remove(); // Delete poyo from the DOM
+            
         }
     };
     
